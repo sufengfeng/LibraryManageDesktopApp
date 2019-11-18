@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import QIcon, QFont
 from PyQt5.QtCore import Qt
 import sip
-import qdarkstyle
+#import qdarkstyle
 from BookStorageViewer import BookStorageViewer
 from borrowBookDialog import borrowBookDialog
 from returnBookDialog import returnBookDialog
@@ -98,7 +98,7 @@ class StudentHome(QWidget):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     app.setWindowIcon(QIcon("./images/MainWindow_1.png"))
-    app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
+    #app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
     mainMindow = StudentHome("PB15000135")
     mainMindow.show()
     sys.exit(app.exec_())

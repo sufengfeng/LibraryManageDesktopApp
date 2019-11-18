@@ -2,7 +2,7 @@ import sys
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import QIcon, QFont
 from PyQt5.QtCore import *
-import qdarkstyle
+#import qdarkstyle
 from SignIn import SignInWidget
 from SignUp import SignUpWidget
 import sip
@@ -100,7 +100,7 @@ class Main(QMainWindow):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     app.setWindowIcon(QIcon("./images/MainWindow_1.png"))
-    app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
+    #app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
     mainMindow = Main()
     mainMindow.show()
     sys.exit(app.exec_())

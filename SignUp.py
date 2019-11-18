@@ -2,7 +2,7 @@ import sys
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
-import qdarkstyle
+#import qdarkstyle
 from PyQt5.QtSql import *
 import hashlib
 
@@ -149,7 +149,7 @@ class SignUpWidget(QWidget):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     app.setWindowIcon(QIcon("./images/MainWindow_1.png"))
-    app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
+#    app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
     mainMindow = SignUpWidget()
     mainMindow.show()
     sys.exit(app.exec_())
